@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Yew App</title>
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="modulepreload" href="https://alexandercoop.com/yew_website_template/website-bb4f4c3cf89c030b.js" crossorigin="anonymous" integrity="sha384-NLItcK430HBGYUcMv4h2wZ2V6EvAP1vPRFx17MFyMSbla+SUTOP3Aqfu2dXeT05V"><link rel="preload" href="https://alexandercoop.com/yew_website_template/website-bb4f4c3cf89c030b_bg.wasm" crossorigin="anonymous" integrity="sha384-PyDOE3wCab7PVoO6/5ubi+PPAzeUQkNQTai3o4inLY1FR736d+llDNNpGEo19v8U" as="fetch" type="application/wasm"></head>
+    <body class="bg-slate-900 text-white">
+<script type="module">
+import init, * as bindings from 'https://alexandercoop.com/yew_website_template/website-bb4f4c3cf89c030b.js';
+const wasm = await init({ module_or_path: 'https://alexandercoop.com/yew_website_template/website-bb4f4c3cf89c030b_bg.wasm' });
+
+
+window.wasmBindings = bindings;
+
+
+dispatchEvent(new CustomEvent("TrunkApplicationStarted", {detail: {wasm}}));
+
+</script></body>
+</html>
